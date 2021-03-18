@@ -1,0 +1,37 @@
+#sidebarMenu {
+  margin: 0;
+  padding: 0;
+  ul li {
+    margin-top: 8px;
+    &:hover {
+      background-color: $clr-faded;
+      cursor: pointer;
+      border-left: 4px solid rgba(126, 82, 232, 0.6);
+      transition: 0.3s all;
+    }
+    a {
+      color: rgba(34, 34, 34, 0.6);
+      font-size: 15px;
+      img {
+        margin-bottom: 4px;
+        padding-right: 8px;
+      }
+    }
+  }
+  .active {
+    background-color: $clr-faded;
+    cursor: pointer;
+    border-left: 4px solid rgba(126, 82, 232, 0.6);
+  }
+  .nav-link {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.sidebar_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 88vh;
+}
