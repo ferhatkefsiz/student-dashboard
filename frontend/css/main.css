@@ -11645,4 +11645,55 @@ header .navbar-nav .avatar img {
 .inbox .list-group-item {
   border: 0;
 }
+
+.exam_section {
+  background: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+          box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+  padding: 24px;
+}
+
+.exam_section div,
+.exam_section span {
+  font-size: 16px;
+  color: #222222;
+}
+
+.exam_section div {
+  line-height: 21px;
+}
+
+.exam_section span {
+  font-size: 16px;
+  line-height: 19px;
+  opacity: 0.6;
+}
+
+.exam_title {
+  margin-top: 28px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.box_space {
+  margin-top: 16px;
+}
+
+.bg-primary {
+  background: -webkit-gradient(linear, left top, right top, from(#8e93ff), color-stop(102.04%, #6967ff));
+  background: linear-gradient(90deg, #8e93ff 0%, #6967ff 102.04%);
+  -webkit-box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+          box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+  box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+}
+
+.bg-primary div, .bg-primary span {
+  color: #fff !important;
+}
+
+.bg-primary span {
+  opacity: 0.6;
+}
 /*# sourceMappingURL=main.css.map */

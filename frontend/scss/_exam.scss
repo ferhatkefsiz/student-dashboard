@@ -1,0 +1,44 @@
+.exam_section {
+  background: $clr-white;
+  border-radius: 8px;
+  box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+  padding: 24px;
+
+  div,
+  span {
+    font-size: 16px;
+    color: $clr-black;
+  }
+  div {
+    line-height: 21px;
+  }
+  span {
+    font-size: 16px;
+    line-height: 19px;
+    opacity: 0.6;
+  }
+}
+
+.exam_title {
+  margin-top: 28px;
+  margin-bottom: 16px;
+  font-size: 18px;
+line-height: 24px;
+}
+
+.box_space {
+  margin-top: 16px;
+}
+
+.bg-primary {
+  background: linear-gradient(90deg, #8e93ff 0%, #6967ff 102.04%);
+  box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+  box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+
+  div,span {
+    color: $clr-white !important;
+  }
+  span {
+    opacity: 0.6;
+  }
+}
