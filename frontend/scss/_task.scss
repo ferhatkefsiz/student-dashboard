@@ -1,0 +1,58 @@
+$task-padding: 8px 13px 7px 14px;
+
+.task_title {
+  padding-top: 31px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.task_container {
+  box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+  border-radius: 4px;
+  padding-bottom: 31px;
+  .task_logo {
+    font-size: 20px;
+    .clr-orange {
+      background: #ffe9e2;
+      color: #f14d19;
+      padding: $task-padding;
+      line-height: 27px;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .clr-yellow {
+      background: #fff6d4;
+      color: #f4c100;
+      padding: $task-padding;
+      line-height: 27px;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .clr-blue {
+      background: #e5e8ff;
+      color: #1630f4;
+      padding: $task-padding;
+      line-height: 27px;
+      border-radius: 6px;
+      text-align: center;
+    }
+  }
+  .task_group {
+    align-items: center;
+    padding-top: 27px;
+    padding-left: 16px;
+    .task_info {
+      padding-left: 11px;
+      .task_name {
+        font-size: 16px;
+        line-height: 21px;
+      }
+      .task_time {
+        font-family: $font-sans;
+        font-size: 12px;
+        line-height: 16px;
+        opacity: 0.7;
+      }
+    }
+  }
+}
