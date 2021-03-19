@@ -1,0 +1,66 @@
+.list-group-item {
+  border: 0;
+  padding: 0;
+
+  .student_inf {
+    flex: 1;
+    margin-left: 11px;
+    .student_name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      color: $clr-black;
+    }
+
+    .student_status {
+      font-family: $font-sans;
+      font-size: 12px;
+      line-height: 16px;
+      opacity: 0.7;
+    }
+  }
+
+  .student_available {
+    font-size: 10px;
+    line-height: 14px;
+    text-align: right;
+    color: #222222;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  .chat_spacing {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 24px;
+  }
+  .last {
+    margin-bottom: 24px;
+  }
+}
+
+.chatbox_title {
+  font-size: 18px;
+  line-height: 24px;
+  color: $clr-black;
+  margin-bottom: 16px;
+}
+
+.chat_btn {
+  background-color: $clr-primary;
+  color: $clr-white;
+  font-family: $font-sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  border: none;
+  box-shadow: 0px 9px 28px rgba(130, 74, 72, 0.09);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}

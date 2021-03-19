@@ -1,0 +1,30 @@
+.info-absent {
+  box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+  border-radius: 4px;
+  background: #fff;
+  padding-bottom: 6px;
+  padding-top: 14px;
+  margin: 0;
+  h6 {
+    color: $clr-black;
+    line-height: 16px;
+    opacity: 0.7;
+    font-size: 12px;
+  }
+  p {
+    font-size: 28px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    font-family: $font-sans;
+  }
+  .green {
+    color: #76e699;
+  }
+  .pink {
+    color: #f2699f;
+  }
+  .orange {
+    color: #f5a623;
+  }
+}
