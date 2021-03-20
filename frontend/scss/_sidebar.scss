@@ -1,14 +1,26 @@
 #sidebarMenu {
   margin: 0;
   padding: 0;
+  .active {
+    position: relative;
+    background-color: $clr-faded;
+    span {
+      color: #7e52e8;
+    }
+  }
+  .active::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(126, 82, 232, 0.3);
+    width: 4px;
+    top: 0;
+    height: 100%;
+  }
+
   ul li {
     margin-top: 8px;
-    &:hover {
-      background-color: $clr-faded;
-      cursor: pointer;
-      border-left: 4px solid rgba(126, 82, 232, 0.6);
-      transition: 0.3s all;
-    }
+    padding-top: 6px;
+    padding-bottom: 6px;
     a {
       color: rgba(34, 34, 34, 0.6);
       font-size: 15px;
@@ -18,14 +30,12 @@
       }
     }
   }
-  .active {
-    background-color: $clr-faded;
-    cursor: pointer;
-    border-left: 4px solid rgba(126, 82, 232, 0.6);
-  }
   .nav-link {
     display: flex;
     justify-content: space-between;
+  }
+  .nav-settings {
+    margin-bottom: 95px;
   }
 }
 
@@ -33,5 +43,5 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 88vh;
+  height: 100vh;
 }

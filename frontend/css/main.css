@@ -11348,6 +11348,13 @@ body {
   height: 100vh;
   background: #f5f6f9;
   color: #222222;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    overflow-y: scroll;
+  }
 }
 
 h1, .h1,
@@ -11400,16 +11407,28 @@ header .navbar-nav .avatar img {
   padding: 0;
 }
 
-#sidebarMenu ul li {
-  margin-top: 8px;
+#sidebarMenu .active {
+  position: relative;
+  background-color: #e1e0ff;
 }
 
-#sidebarMenu ul li:hover {
-  background-color: #e1e0ff;
-  cursor: pointer;
-  border-left: 4px solid rgba(126, 82, 232, 0.6);
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
+#sidebarMenu .active span {
+  color: #7e52e8;
+}
+
+#sidebarMenu .active::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(126, 82, 232, 0.3);
+  width: 4px;
+  top: 0;
+  height: 100%;
+}
+
+#sidebarMenu ul li {
+  margin-top: 8px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 #sidebarMenu ul li a {
@@ -11422,12 +11441,6 @@ header .navbar-nav .avatar img {
   padding-right: 8px;
 }
 
-#sidebarMenu .active {
-  background-color: #e1e0ff;
-  cursor: pointer;
-  border-left: 4px solid rgba(126, 82, 232, 0.6);
-}
-
 #sidebarMenu .nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11435,6 +11448,10 @@ header .navbar-nav .avatar img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#sidebarMenu .nav-settings {
+  margin-bottom: 95px;
 }
 
 .sidebar_flex {
@@ -11448,25 +11465,29 @@ header .navbar-nav .avatar img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 88vh;
+  height: 100vh;
 }
 
 .banner {
-  background: red;
-  background-image: url(/assets/images/banner.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: linear-gradient(181deg, #8e93ff -22.43%, #6967ff 111.87%);
   font-family: "Open Sans", sans-serif;
-  padding: 60px;
+  -webkit-box-shadow: 0px 9px 28px rgba(23, 23, 68, 0.04);
+          box-shadow: 0px 9px 28px rgba(23, 23, 68, 0.04);
+  border-radius: 4px;
+  height: 209px;
+  padding-left: 34px;
 }
 
 .banner .banner_text {
   font-size: 14px;
   line-height: 22px;
   color: #fff;
+  padding-top: 57px;
 }
 
 .banner .banner_btn {
+  width: 137px;
+  height: 40px;
   background: #c86dff;
   border: 0;
   outline: 0;
@@ -11474,6 +11495,12 @@ header .navbar-nav .avatar img {
           box-shadow: 0px 9px 28px rgba(130, 74, 72, 0.09);
   border-radius: 4px;
   color: #fff;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.banner .banner-rt-side {
+  padding: 0;
 }
 
 .project {
@@ -11804,5 +11831,73 @@ header .navbar-nav .avatar img {
 
 .rounded-full {
   border-radius: 50%;
+}
+
+.task_title {
+  padding-top: 31px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.task_container {
+  -webkit-box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+          box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+  border-radius: 4px;
+  padding-bottom: 31px;
+}
+
+.task_container .task_logo {
+  font-size: 20px;
+}
+
+.task_container .task_logo .clr-orange {
+  background: #ffe9e2;
+  color: #f14d19;
+  padding: 8px 13px 7px 14px;
+  line-height: 27px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.task_container .task_logo .clr-yellow {
+  background: #fff6d4;
+  color: #f4c100;
+  padding: 8px 13px 7px 14px;
+  line-height: 27px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.task_container .task_logo .clr-blue {
+  background: #e5e8ff;
+  color: #1630f4;
+  padding: 8px 13px 7px 14px;
+  line-height: 27px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.task_container .task_group {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 27px;
+  padding-left: 16px;
+}
+
+.task_container .task_group .task_info {
+  padding-left: 11px;
+}
+
+.task_container .task_group .task_info .task_name {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.task_container .task_group .task_info .task_time {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=main.css.map */

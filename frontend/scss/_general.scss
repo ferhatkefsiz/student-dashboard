@@ -16,6 +16,14 @@ body {
   height: 100vh;
   background: #f5f6f9;
   color: $clr-black;
+  overflow-y: hidden;
+ 
+}
+
+@media screen and (max-width: 992px) {
+  body {
+   overflow-y: scroll;
+  }
 }
 
 h1,

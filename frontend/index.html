@@ -47,7 +47,7 @@
                 <a class="nav-link" aria-current="page" href="#">
                   <div>
                     <img src="assets/svg/sidebar/home.svg" alt="home">
-                    Dashboard
+                    <span>Dashboard</span>
                   </div>
                 </a>
               </li>
@@ -110,7 +110,7 @@
                 </a>
               </li>
             </ul>
-            <ul class="nav flex-column ">
+            <ul class="nav flex-column nav-settings">
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <div>
@@ -130,227 +130,230 @@
           <div class="container_fluid">
             <div class="row">
               <div class="col-md-8">
-              <!-- Banner -->
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="banner col-md-12 ">
-                    <h6 class="w-50 banner_text">
+                <!-- Banner -->
+                <div class="row banner">
+                  <div class="col-sm-6 d-flex flex-column justify-content-center">
+                    <h6 class="banner_text">
                       You have completed 60% of your goal this week! start a new goal and improve your result
                     </h6>
-                    <button class="banner_btn px-md-4 py-md-2">Learn More</button>
+                    <button class="banner_btn">Learn More</button>
                   </div>
-                </div>
-              </div>
-              <!-- Banner End -->
-
-              <div class="row">
-                <!-- Project Statistic -->
-                <div class="col-md-6">
-                  <div class="row project">
-                    <h6 class="project_title">Project Statistic</h6>
-                    <div class="col-md-12 ">
-                      <div class="bg-light d-flex align-items-center flex-wrap space radius">
-                        <div class="score">
-                          <div class="border_score purple">
-                            <div class="project_score">
-                              85
-                            </div>
-                          </div>
-                        </div>
-                        <div class="project_info">
-                          <h5 class="project_name">Project Frog Survey</h5>
-                          <p class="project_lesson">Biology</p>
-                          <p class="project_deadline">Deadline 12 August 2020 ( 10:45 )</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row project">
-                    <div class="col-md-12">
-                      <div class="bg-light d-flex align-items-center flex-wrap space  radius">
-                        <div class="score">
-                          <div class="border_score red">
-                            <div class="project_score">
-                              60
-                            </div>
-                          </div>
-                        </div>
-                        <div class="project_info">
-                          <h5 class="project_name">Project Earth Quantum</h5>
-                          <p class="project_lesson">Science</p>
-                          <p class="project_deadline">Deadline 12 Sep 2020 ( 10:45 )</p>
-                        </div>
-                      </div>
+                  <div class="col-sm-6 d-flex justify-content-between banner-rt-side">
+                    <h1>H</h1>
+                    <div class="artboard">
                     </div>
                   </div>
                 </div>
-                <!-- Project Statistic End-->
+                <!-- Banner End -->
 
-                <!-- Inbox -->
-                <div class="col-md-6 inbox">
-                  <h6 class="inbox_title">Inbox</h6>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <ul class="list-group">
-                        <li class="list-group-item">
-                          <div class="d-flex  justify-content-between">
-                            <div class="inbox_pp">
-                              <img src="assets/svg/students/katherine.svg" alt="">
-                            </div>
-                            <div class="inbox_inf">
-                              <div class="person_name">Michael Wong</div>
-                              <div class="person_description">Don't forget to work on assignment page 36 in..</div>
-                              <button class="inbox_btn"> Exam-Science.xls</button>
-                            </div>
-                            <span class="person_available">09:32</span>
-                          </div>
-                          <div class="list-border mx-4"></div>
-                        </li>
-                        <li class="list-group-item">
-                          <div class="d-flex  justify-content-between">
-                            <div class="inbox_pp">
-                              <img src="assets/svg/students/france.svg" alt="">
-                            </div>
-                            <div class="inbox_inf">
-                              <div class="person_name">Cindy Chen</div>
-                              <div class="person_description">
-                                Have you made history assignments?
+                <div class="row">
+                  <!-- Project Statistic -->
+                  <div class="col-md-6">
+                    <div class="row project">
+                      <h6 class="project_title">Project Statistic</h6>
+                      <div class="col-md-12 ">
+                        <div class="bg-light d-flex align-items-center flex-wrap space radius">
+                          <div class="score">
+                            <div class="border_score purple">
+                              <div class="project_score">
+                                85
                               </div>
-                              <button class="inbox_btn"> Algebra.pdf</button>
                             </div>
-                            <span class="person_available">11:32</span>
                           </div>
-                        </li>
-                      </ul>
+                          <div class="project_info">
+                            <h5 class="project_name">Project Frog Survey</h5>
+                            <p class="project_lesson">Biology</p>
+                            <p class="project_deadline">Deadline 12 August 2020 ( 10:45 )</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row project">
+                      <div class="col-md-12">
+                        <div class="bg-light d-flex align-items-center flex-wrap space  radius">
+                          <div class="score">
+                            <div class="border_score red">
+                              <div class="project_score">
+                                60
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project_info">
+                            <h5 class="project_name">Project Earth Quantum</h5>
+                            <p class="project_lesson">Science</p>
+                            <p class="project_deadline">Deadline 12 Sep 2020 ( 10:45 )</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Project Statistic End-->
+
+                  <!-- Inbox -->
+                  <div class="col-md-6 inbox">
+                    <h6 class="inbox_title">Inbox</h6>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <ul class="list-group">
+                          <li class="list-group-item">
+                            <div class="d-flex  justify-content-between">
+                              <div class="inbox_pp">
+                                <img src="assets/svg/students/katherine.svg" alt="">
+                              </div>
+                              <div class="inbox_inf">
+                                <div class="person_name">Michael Wong</div>
+                                <div class="person_description">Don't forget to work on assignment page 36 in..</div>
+                                <button class="inbox_btn"> Exam-Science.xls</button>
+                              </div>
+                              <span class="person_available">09:32</span>
+                            </div>
+                            <div class="list-border mx-4"></div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="d-flex  justify-content-between">
+                              <div class="inbox_pp">
+                                <img src="assets/svg/students/france.svg" alt="">
+                              </div>
+                              <div class="inbox_inf">
+                                <div class="person_name">Cindy Chen</div>
+                                <div class="person_description">
+                                  Have you made history assignments?
+                                </div>
+                                <button class="inbox_btn"> Algebra.pdf</button>
+                              </div>
+                              <span class="person_available">11:32</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Inbox End-->
+                </div>
+
+                <!-- Exam Section-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <h6 class="exam_title">Exam Schedule</h6>
+                    <div
+                      class="bg-light d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam_section">
+                      <div>Physics</div>
+                      <span>Class 3</span>
+                      <span>Tuesday</span>
+                      <span>3 Dec 2020</span>
+                      <span>08:30 AM</span>
+                      <span>
+                        <img src="assets/svg/exam-settings.svg" alt="">
+                      </span>
+                    </div>
+                    <div
+                      class="bg-primary d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam_section box_space">
+                      <div>Biology</div>
+                      <span>Lab 1</span>
+                      <span>Monday</span>
+                      <span>04 Dec 2020</span>
+                      <span>08:30 AM</span>
+                      <span>
+                        <img src="assets/svg/exam-settings.svg" alt="">
+                      </span>
+                    </div>
+                    <div
+                      class="bg-light d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam_section box_space">
+                      <div>Math</div>
+                      <span>Practice 3</span>
+                      <span>Thursday</span>
+                      <span>05 Dec 2020</span>
+                      <span>08:30 AM</span>
+                      <span>
+                        <img src="assets/svg/exam-settings.svg" alt="">
+                      </span>
                     </div>
                   </div>
                 </div>
-                <!-- Inbox End-->
+                <!-- Exam Section End -->
+
               </div>
+              <div class="col-md-4">
 
-              <!-- Exam Section-->
-              <div class="row">
-                <div class="col-md-12">
-                  <h6 class="exam_title">Exam Schedule</h6>
-                  <div
-                    class="bg-light d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam_section">
-                    <div>Physics</div>
-                    <span>Class 3</span>
-                    <span>Tuesday</span>
-                    <span>3 Dec 2020</span>
-                    <span>08:30 AM</span>
-                    <span>
-                      <img src="assets/svg/exam-settings.svg" alt="">
-                    </span>
-                  </div>
-                  <div
-                    class="bg-primary d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam_section box_space">
-                    <div>Biology</div>
-                    <span>Lab 1</span>
-                    <span>Monday</span>
-                    <span>04 Dec 2020</span>
-                    <span>08:30 AM</span>
-                    <span>
-                      <img src="assets/svg/exam-settings.svg" alt="">
-                    </span>
-                  </div>
-                  <div
-                    class="bg-light d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam_section box_space">
-                    <div>Math</div>
-                    <span>Practice 3</span>
-                    <span>Thursday</span>
-                    <span>05 Dec 2020</span>
-                    <span>08:30 AM</span>
-                    <span>
-                      <img src="assets/svg/exam-settings.svg" alt="">
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <!-- Exam Section End -->
-
-            </div>
-            <div class="col-md-4">
-
-              <!-- İnfo Absent -->
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="row align-items-center text-center info-absent my-4">
-                    <div class="col">
-                      <h6>Attendance</h6>
-                      <p class="green">359</p>
-                    </div>
-                    <div class="col">
-                      <h6>Late</h6>
-                      <p class="pink">12</p>
-                    </div>
-                    <div class="col">
-                      <h6>Absent</h6>
-                      <p class="orange">04</p>
+                <!-- İnfo Absent -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row align-items-center text-center info-absent my-4">
+                      <div class="col">
+                        <h6>Attendance</h6>
+                        <p class="green">359</p>
+                      </div>
+                      <div class="col">
+                        <h6>Late</h6>
+                        <p class="pink">12</p>
+                      </div>
+                      <div class="col">
+                        <h6>Absent</h6>
+                        <p class="orange">04</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- İnfo Absent End -->
+                <!-- İnfo Absent End -->
 
-              <!-- Chat Box -->
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 class="chatbox_title">Friends Online</h4>
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center chat_spacing justify-content-between">
-                        <div>
-                          <img src="assets/svg/students/france.svg" alt="">
+                <!-- Chat Box -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4 class="chatbox_title">Friends Online</h4>
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <div class="d-flex align-items-center chat_spacing justify-content-between">
+                          <div>
+                            <img src="assets/svg/students/france.svg" alt="">
+                          </div>
+                          <div class="student_inf">
+                            <div class="student_name">Francis Tran</div>
+                            <div class="student_status">Health is not good.</div>
+                          </div>
+                          <span class="student_available">05 minutes ago</span>
                         </div>
-                        <div class="student_inf">
-                          <div class="student_name">Francis Tran</div>
-                          <div class="student_status">Health is not good.</div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="d-flex align-items-center chat_spacing justify-content-between">
+                          <div>
+                            <img src="assets/svg/students/elliana.svg" class="rounded-full" alt="">
+                          </div>
+                          <div class="student_inf">
+                            <div class="student_name">Elliana Palacios</div>
+                            <div class="student_status">Health is not good.</div>
+                          </div>
+                          <span class="student_available">23 minutes ago</span>
                         </div>
-                        <span class="student_available">05 minutes ago</span>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center chat_spacing justify-content-between">
-                        <div>
-                          <img src="assets/svg/students/elliana.svg" class="rounded-full" alt="">
+                      </li>
+                      <li class="list-group-item">
+                        <div class="d-flex align-items-center chat_spacing justify-content-between">
+                          <div>
+                            <img src="assets/svg/students/katherine.svg" alt="">
+                          </div>
+                          <div class="student_inf">
+                            <div class="student_name">Katherina Webster</div>
+                            <div class="student_status">Going on trip with my fam...</div>
+                          </div>
+                          <span class="student_available">10 minutes ago</span>
                         </div>
-                        <div class="student_inf">
-                          <div class="student_name">Elliana Palacios</div>
-                          <div class="student_status">Health is not good.</div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="d-flex align-items-center chat_spacing justify-content-between last">
+                          <div>
+                            <img src="assets/svg/students/avalon.svg" class="rounded-full" alt="">
+                          </div>
+                          <div class="student_inf">
+                            <div class="student_name">Avalon Carey</div>
+                            <div class="student_status">Going on trip with my fam...</div>
+                          </div>
+                          <span class="student_available">10 minutes ago</span>
                         </div>
-                        <span class="student_available">23 minutes ago</span>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center chat_spacing justify-content-between">
-                        <div>
-                          <img src="assets/svg/students/katherine.svg" alt="">
-                        </div>
-                        <div class="student_inf">
-                          <div class="student_name">Katherina Webster</div>
-                          <div class="student_status">Going on trip with my fam...</div>
-                        </div>
-                        <span class="student_available">10 minutes ago</span>
-                      </div>
-                    </li>
-                    <li class="list-group-item">
-                      <div class="d-flex align-items-center chat_spacing justify-content-between last">
-                        <div>
-                          <img src="assets/svg/students/avalon.svg" class="rounded-full" alt="">
-                        </div>
-                        <div class="student_inf">
-                          <div class="student_name">Avalon Carey</div>
-                          <div class="student_status">Going on trip with my fam...</div>
-                        </div>
-                        <span class="student_available">10 minutes ago</span>
-                      </div>
-                    </li>
-                    <button class="chat_btn">New Chat</button>
-                  </ul>
+                      </li>
+                      <button class="chat_btn">New Chat</button>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <!-- Chat Box End -->
+                <!-- Chat Box End -->
 
                 <!-- Task List -->
                 <div class="row">
@@ -389,8 +392,8 @@
                 </div>
                 <!-- Task List End -->
 
+              </div>
             </div>
-          </div>
 
 
         </main>
