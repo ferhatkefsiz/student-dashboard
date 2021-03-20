@@ -12,7 +12,7 @@
   <body>
     <!-- Header -->
     <header class="navbar flex-md-nowrap ">
-      <a class="navbar-brand col-md-3 col-lg-2 d-none d-md-block" href="index.html"> Dashboard </a>
+      <a class="navbar_brand col-md-3 col-lg-2 d-none d-md-block navbar_title" href="index.html"> Dashboard </a>
       <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
@@ -21,8 +21,8 @@
       </button>
       <ul class="navbar-nav d-none d-md-block">
         <li class="nav-item text-nowrap">
-          <div class="avatar">
-            <img src="assets/images/profile.png" alt="">
+          <div class="navbar_avatar">
+            <img class="navbar_avatar_profile" src="assets/images/profile.png" alt="">
           </div>
           <span>İbrahim</span>
           </div>
@@ -132,17 +132,14 @@
               <div class="col-md-8">
                 <!-- Banner -->
                 <div class="row banner">
-                  <div class="col-sm-6 d-flex flex-column justify-content-center">
-                    <h6 class="banner_text">
-                      You have completed 60% of your goal this week! start a new goal and improve your result
+                  <div class="col d-flex flex-column justify-content-center">
+                    <h6 class="banner_text  ">
+                      You have completed 60% of your goal this week! <br>
+                      start a new goal and improve your result
                     </h6>
                     <button class="banner_btn">Learn More</button>
                   </div>
-                  <div class="col-sm-6 d-flex justify-content-between banner-rt-side">
-                    <h1>H</h1>
-                    <div class="artboard">
-                    </div>
-                  </div>
+                  <img class="banner_img" src="assets/svg/artboard.svg" alt="">
                 </div>
                 <!-- Banner End -->
 
@@ -154,11 +151,7 @@
                       <div class="col-md-12 ">
                         <div class="bg-light d-flex align-items-center flex-wrap space radius">
                           <div class="score">
-                            <div class="border_score purple">
-                              <div class="project_score">
-                                85
-                              </div>
-                            </div>
+                            <img src="assets/svg/biology.svg" alt="">
                           </div>
                           <div class="project_info">
                             <h5 class="project_name">Project Frog Survey</h5>
@@ -172,11 +165,7 @@
                       <div class="col-md-12">
                         <div class="bg-light d-flex align-items-center flex-wrap space  radius">
                           <div class="score">
-                            <div class="border_score red">
-                              <div class="project_score">
-                                60
-                              </div>
-                            </div>
+                            <img src="assets/svg/science.svg" alt="">
                           </div>
                           <div class="project_info">
                             <h5 class="project_name">Project Earth Quantum</h5>
@@ -196,30 +185,30 @@
                       <div class="col-md-12">
                         <ul class="list-group">
                           <li class="list-group-item">
-                            <div class="d-flex  justify-content-between">
+                            <div class="d-flex justify-content-between">
                               <div class="inbox_pp">
                                 <img src="assets/svg/students/katherine.svg" alt="">
                               </div>
                               <div class="inbox_inf">
-                                <div class="person_name">Michael Wong</div>
-                                <div class="person_description">Don't forget to work on assignment page 36 in..</div>
-                                <button class="inbox_btn"> Exam-Science.xls</button>
+                                <div class="inbox_inf_name">Michael Wong</div>
+                                <div class="inbox_inf_description">Don't forget to work on assignment page 36 in..</div>
+                                <button class="inbox_inf_btn"> Exam-Science.xls</button>
                               </div>
                               <span class="person_available">09:32</span>
                             </div>
                             <div class="list-border mx-4"></div>
                           </li>
                           <li class="list-group-item">
-                            <div class="d-flex  justify-content-between">
+                            <div class="d-flex justify-content-between">
                               <div class="inbox_pp">
                                 <img src="assets/svg/students/france.svg" alt="">
                               </div>
                               <div class="inbox_inf">
-                                <div class="person_name">Cindy Chen</div>
-                                <div class="person_description">
+                                <div class="inbox_inf_name">Cindy Chen</div>
+                                <div class="inbox_inf_description">
                                   Have you made history assignments?
                                 </div>
-                                <button class="inbox_btn"> Algebra.pdf</button>
+                                <button class="inbox_inf_btn"> Algebra.pdf</button>
                               </div>
                               <span class="person_available">11:32</span>
                             </div>
@@ -234,36 +223,37 @@
                 <!-- Exam Section-->
                 <div class="row">
                   <div class="col-md-12">
-                    <h6 class="exam_title">Exam Schedule</h6>
+                    <h6 class="exam_section_title">Exam Schedule</h6>
                     <div
-                      class="bg-light d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam_section">
-                      <div>Physics</div>
-                      <span>Class 3</span>
-                      <span>Tuesday</span>
-                      <span>3 Dec 2020</span>
-                      <span>08:30 AM</span>
+                      class="bg-light d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam box_space">
+                      <div class="exam_title">Physics</div>
+                      <span class="exam_class">Class 3</span>
+                      <span class="exam_day">Tuesday</span>
+                      <span class="exam_date">3 Dec 2020</span>
+                      <spa class="exam_hour">08:30 AM</spa>
                       <span>
                         <img src="assets/svg/exam-settings.svg" alt="">
                       </span>
                     </div>
                     <div
-                      class="bg-primary d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam_section box_space">
-                      <div>Biology</div>
-                      <span>Lab 1</span>
-                      <span>Monday</span>
-                      <span>04 Dec 2020</span>
-                      <span>08:30 AM</span>
+                      class="d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam box_space exam_linear">
+                      <div class="exam_title_primary">Biology</div>
+                      <span class="exam_class_primary">Lab 1</span>
+                      <span class="exam_day_primary">Monday</span>
+                      <span class="exam_date_primary">04 Dec 2020</span>
+                      <span class="exam_hour_primary">08:30 AM</span>
                       <span>
                         <img src="assets/svg/exam-settings.svg" alt="">
                       </span>
                     </div>
+
                     <div
-                      class="bg-light d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam_section box_space">
-                      <div>Math</div>
-                      <span>Practice 3</span>
-                      <span>Thursday</span>
-                      <span>05 Dec 2020</span>
-                      <span>08:30 AM</span>
+                      class="bg-light d-flex flex-wrap flex-md-nowrap align-items-center justify-content-between exam box_space">
+                      <div class="exam_title">Math</div>
+                      <span class="exam_class">Practice 3</span>
+                      <span class="exam_day">Thursday</span>
+                      <span class="exam_date">05 Dec 2020</span>
+                      <span class="exam_hour">08:30 AM</span>
                       <span>
                         <img src="assets/svg/exam-settings.svg" alt="">
                       </span>
@@ -278,18 +268,18 @@
                 <!-- İnfo Absent -->
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="row align-items-center text-center info-absent my-4">
-                      <div class="col">
-                        <h6>Attendance</h6>
-                        <p class="green">359</p>
+                    <div class="row align-items-center absent text-center  my-4">
+                      <div class="col absent_border">
+                        <h6 class="absent_title">Attendance</h6>
+                        <p class="absent_green">359</p>
                       </div>
-                      <div class="col">
-                        <h6>Late</h6>
-                        <p class="pink">12</p>
+                      <div class="col absent_border">
+                        <h6 class="absent_title">Late</h6>
+                        <p class="absent_pink">12</p>
                       </div>
-                      <div class="col">
-                        <h6>Absent</h6>
-                        <p class="orange">04</p>
+                      <div class="col absent_border">
+                        <h6 class="absent_title">Absent</h6>
+                        <p class="absent_orange">04</p>
                       </div>
                     </div>
                   </div>
@@ -301,52 +291,52 @@
                   <div class="col-md-12">
                     <h4 class="chatbox_title">Friends Online</h4>
                     <ul class="list-group">
-                      <li class="list-group-item">
+                      <li class="list-group-item chat">
                         <div class="d-flex align-items-center chat_spacing justify-content-between">
                           <div>
                             <img src="assets/svg/students/france.svg" alt="">
                           </div>
-                          <div class="student_inf">
-                            <div class="student_name">Francis Tran</div>
-                            <div class="student_status">Health is not good.</div>
+                          <div class="chat_student_inf">
+                            <div class="chat_student_inf_name">Francis Tran</div>
+                            <div class="chat_student_inf_status">Health is not good.</div>
                           </div>
-                          <span class="student_available">05 minutes ago</span>
+                          <span class="chat_student_available">05 minutes ago</span>
                         </div>
                       </li>
-                      <li class="list-group-item">
+                      <li class="list-group-item chat">
                         <div class="d-flex align-items-center chat_spacing justify-content-between">
                           <div>
                             <img src="assets/svg/students/elliana.svg" class="rounded-full" alt="">
                           </div>
-                          <div class="student_inf">
-                            <div class="student_name">Elliana Palacios</div>
-                            <div class="student_status">Health is not good.</div>
+                          <div class="chat_student_inf">
+                            <div class="chat_student_inf_name">Elliana Palacios</div>
+                            <div class="chat_student_inf_status">Health is not good.</div>
                           </div>
-                          <span class="student_available">23 minutes ago</span>
+                          <span class="chat_student_available">23 minutes ago</span>
                         </div>
                       </li>
-                      <li class="list-group-item">
+                      <li class="list-group-item chat">
                         <div class="d-flex align-items-center chat_spacing justify-content-between">
                           <div>
                             <img src="assets/svg/students/katherine.svg" alt="">
                           </div>
-                          <div class="student_inf">
-                            <div class="student_name">Katherina Webster</div>
-                            <div class="student_status">Going on trip with my fam...</div>
+                          <div class="chat_student_inf">
+                            <div class="chat_student_inf_name">Katherina Webster</div>
+                            <div class="chat_student_inf_status">Going on trip with my fam...</div>
                           </div>
-                          <span class="student_available">10 minutes ago</span>
+                          <span class="chat_student_available">10 minutes ago</span>
                         </div>
                       </li>
-                      <li class="list-group-item">
+                      <li class="list-group-item chat">
                         <div class="d-flex align-items-center chat_spacing justify-content-between last">
                           <div>
                             <img src="assets/svg/students/avalon.svg" class="rounded-full" alt="">
                           </div>
-                          <div class="student_inf">
-                            <div class="student_name">Avalon Carey</div>
-                            <div class="student_status">Going on trip with my fam...</div>
+                          <div class="chat_student_inf">
+                            <div class="chat_student_inf_name">Avalon Carey</div>
+                            <div class="chat_student_inf_status">Going on trip with my fam...</div>
                           </div>
-                          <span class="student_available">10 minutes ago</span>
+                          <span class="chat_student_available">10 minutes ago</span>
                         </div>
                       </li>
                       <button class="chat_btn">New Chat</button>
@@ -359,32 +349,32 @@
                 <div class="row">
                   <h6 class="task_title">Upcoming Task</h6>
                   <div class="col-md-12">
-                    <div class="task_container bg-light">
+                    <div class="task bg-light">
                       <div class="d-flex task_group">
                         <div class="task_logo">
-                          <span class="clr-orange">A</span>
+                          <span class="task_logo_orange">A</span>
                         </div>
-                        <div class="task_info">
-                          <span class="task_name">Discussion Algorithm</span>
-                          <p class="task_time">08:00 AM - 12:00 PM</p>
-                        </div>
-                      </div>
-                      <div class="d-flex task_group ">
-                        <div class="task_logo">
-                          <span class="clr-yellow"> M </span>
-                        </div>
-                        <div class="task_info">
-                          <span class="task_name">Fundamental Math</span>
-                          <p class="task_time">12:00 PM - 15:00 PM</p>
+                        <div class="task_group_info">
+                          <span class="task_group_info_name">Discussion Algorithm</span>
+                          <p class="task_group_info_time">08:00 AM - 12:00 PM</p>
                         </div>
                       </div>
                       <div class="d-flex task_group">
                         <div class="task_logo">
-                          <span class="clr-blue"> H </span>
+                          <span class="task_logo_yellow"> M </span>
                         </div>
-                        <div class="task_info">
-                          <span class="task_name">DNA Modifications in Humans</span>
-                          <p class="task_time">Ongoing </p>
+                        <div class="task_group_info">
+                          <span class="task_group_info_name">Fundamental Math</span>
+                          <p class="task_group_info_time">12:00 PM - 15:00 PM</p>
+                        </div>
+                      </div>
+                      <div class="d-flex task_group">
+                        <div class="task_logo">
+                          <span class="task_logo_blue"> H </span>
+                        </div>
+                        <div class="task_group_info">
+                          <span class="task_group_info_name">DNA Modifications in Humans</span>
+                          <p class="task_group_info_time">Ongoing </p>
                         </div>
                       </div>
                     </div>
@@ -395,16 +385,12 @@
               </div>
             </div>
 
-
         </main>
         <!-- Main End -->
 
 
       </div>
     </div>
-
-
-
 
 
   </body>

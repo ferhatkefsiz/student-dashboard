@@ -5,13 +5,15 @@
   border-radius: 4px;
   height: 209px;
   padding-left: 34px;
-  .banner_text {
+  position: relative;
+  margin-top: 20px;
+  &_text {
     font-size: 14px;
     line-height: 22px;
     color: $clr-white;
     padding-top: 57px;
   }
-  .banner_btn {
+  &_btn {
     width: 137px;
     height: 40px;
     background: #c86dff;
@@ -23,7 +25,15 @@
     margin-top: 22px;
     margin-bottom: 22px;
   }
-  .banner-rt-side {
+  &_img {
+    max-width: 330px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     padding: 0;
+    @media (max-width: 900px) {
+      display: none;;
+    }
   }
 }

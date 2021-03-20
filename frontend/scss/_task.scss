@@ -6,13 +6,13 @@ $task-padding: 8px 13px 7px 14px;
   line-height: 24px;
 }
 
-.task_container {
+.task {
   box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
   border-radius: 4px;
   padding-bottom: 31px;
-  .task_logo {
+  &_logo {
     font-size: 20px;
-    .clr-orange {
+    &_orange {
       background: #ffe9e2;
       color: #f14d19;
       padding: $task-padding;
@@ -20,7 +20,7 @@ $task-padding: 8px 13px 7px 14px;
       border-radius: 6px;
       text-align: center;
     }
-    .clr-yellow {
+    &_yellow {
       background: #fff6d4;
       color: #f4c100;
       padding: $task-padding;
@@ -28,7 +28,7 @@ $task-padding: 8px 13px 7px 14px;
       border-radius: 6px;
       text-align: center;
     }
-    .clr-blue {
+    &_blue {
       background: #e5e8ff;
       color: #1630f4;
       padding: $task-padding;
@@ -37,17 +37,17 @@ $task-padding: 8px 13px 7px 14px;
       text-align: center;
     }
   }
-  .task_group {
+  &_group {
     align-items: center;
     padding-top: 27px;
     padding-left: 16px;
-    .task_info {
+    &_info {
       padding-left: 11px;
-      .task_name {
+      &_name {
         font-size: 16px;
         line-height: 21px;
       }
-      .task_time {
+      &_time {
         font-family: $font-sans;
         font-size: 12px;
         line-height: 16px;

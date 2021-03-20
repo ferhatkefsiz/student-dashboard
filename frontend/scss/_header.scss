@@ -1,31 +1,29 @@
-header {
+.navbar {
   height: 70px;
   background-color: $clr-white;
-  a {
+
+  &_brand {
     text-align: center;
     font-size: 20px;
     line-height: 27px;
+    text-decoration-line: none;
+    color: $clr-black;
   }
 
-  .navbar-brand {
-    color: #222222;
-  }
-
-  .navbar-nav {
+  &-nav {
     margin-right: 47px;
     span {
       margin-right: 20px;
       color: rgba(102, 114, 251, 1);
     }
-
-    .avatar {
-      border-left: 2px solid #f5f6f9;
-      padding: 20px;
-      display: inline-block;
-      img {
-        height: 42px;
-        width: 42px;
-      }
+  }
+  &_avatar {
+    border-left: 2px solid #f5f6f9;
+    padding: 20px;
+    display: inline-block;
+    &_profile {
+      height: 42px;
+      width: 42px;
     }
   }
 }

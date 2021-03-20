@@ -11351,7 +11351,7 @@ body {
   overflow-y: hidden;
 }
 
-@media screen and (max-width: 992px) {
+@media (max-width: 900px) {
   body {
     overflow-y: scroll;
   }
@@ -11367,37 +11367,37 @@ p {
   background-color: #fff  !important;
 }
 
-header {
+
+.navbar {
   height: 70px;
   background-color: #fff;
 }
 
-header a {
+.navbar_brand {
   text-align: center;
   font-size: 20px;
   line-height: 27px;
-}
-
-header .navbar-brand {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   color: #222222;
 }
 
-header .navbar-nav {
+.navbar-nav {
   margin-right: 47px;
 }
 
-header .navbar-nav span {
+.navbar-nav span {
   margin-right: 20px;
   color: #6672fb;
 }
 
-header .navbar-nav .avatar {
+.navbar_avatar {
   border-left: 2px solid #f5f6f9;
   padding: 20px;
   display: inline-block;
 }
 
-header .navbar-nav .avatar img {
+.navbar_avatar_profile {
   height: 42px;
   width: 42px;
 }
@@ -11419,7 +11419,7 @@ header .navbar-nav .avatar img {
 #sidebarMenu .active::before {
   content: "";
   position: absolute;
-  background-color: rgba(126, 82, 232, 0.3);
+  background-color: rgba(126, 82, 232, 0.6);
   width: 4px;
   top: 0;
   height: 100%;
@@ -11476,16 +11476,18 @@ header .navbar-nav .avatar img {
   border-radius: 4px;
   height: 209px;
   padding-left: 34px;
+  position: relative;
+  margin-top: 20px;
 }
 
-.banner .banner_text {
+.banner_text {
   font-size: 14px;
   line-height: 22px;
   color: #fff;
   padding-top: 57px;
 }
 
-.banner .banner_btn {
+.banner_btn {
   width: 137px;
   height: 40px;
   background: #c86dff;
@@ -11499,8 +11501,19 @@ header .navbar-nav .avatar img {
   margin-bottom: 22px;
 }
 
-.banner .banner-rt-side {
+.banner_img {
+  max-width: 330px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   padding: 0;
+}
+
+@media (max-width: 900px) {
+  .banner_img {
+    display: none;
+  }
 }
 
 .project {
@@ -11511,7 +11524,7 @@ header .navbar-nav .avatar img {
   margin-top: 16px;
 }
 
-.project .project_title {
+.project_title {
   font-size: 18px;
   line-height: 24px;
   color: #222222;
@@ -11523,13 +11536,13 @@ header .navbar-nav .avatar img {
   padding-bottom: 17px;
 }
 
-.project .project_name {
+.project_name {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
 }
 
-.project .project_lesson {
+.project_lesson {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.1px;
@@ -11537,7 +11550,7 @@ header .navbar-nav .avatar img {
   padding-bottom: 6px;
 }
 
-.project .project_deadline {
+.project_deadline {
   font-style: italic;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -11546,7 +11559,7 @@ header .navbar-nav .avatar img {
   opacity: 0.6;
 }
 
-.project .project_score {
+.project_score {
   border: 1px solid rgba(151, 151, 151, 0.4);
   border-radius: 50%;
   font-family: "Open Sans", sans-serif;
@@ -11594,21 +11607,21 @@ header .navbar-nav .avatar img {
   margin-top: 16px;
 }
 
-.inbox .inbox_title {
+.inbox_title {
   font-size: 18px;
   line-height: 24px;
   color: #222222;
   margin-bottom: 16px;
 }
 
-.inbox .inbox_inf {
+.inbox_inf {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-left: 16px;
 }
 
-.inbox .inbox_inf .person_name {
+.inbox_inf_name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -11617,13 +11630,34 @@ header .navbar-nav .avatar img {
   padding-top: 23px;
 }
 
-.inbox .inbox_inf .person_description {
+.inbox_inf_description {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   opacity: 0.6;
   letter-spacing: 0.09px;
+}
+
+.inbox_inf_btn {
+  margin-top: 9px;
+  margin-bottom: 19px;
+  background-color: transparent;
+  color: #6f6eff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  border: 1px solid #6f6eff;
+  border-radius: 11px;
+  padding: 5px 13px 5px 15px;
+}
+
+.inbox_inf_btn:hover {
+  background-color: #6f6eff;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .inbox .person_available {
@@ -11639,28 +11673,7 @@ header .navbar-nav .avatar img {
   margin-bottom: 2px;
 }
 
-.inbox .inbox_btn {
-  margin-top: 9px;
-  margin-bottom: 19px;
-  background-color: transparent;
-  color: #6f6eff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 14px;
-  border: 1px solid #6f6eff;
-  border-radius: 11px;
-  padding: 5px 13px 5px 15px;
-}
-
-.inbox .inbox_btn:hover {
-  background-color: #6f6eff;
-  color: #fff;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.inbox .inbox_pp {
+.inbox_pp {
   margin-left: 24px;
   margin-top: 23px;
 }
@@ -11671,9 +11684,10 @@ header .navbar-nav .avatar img {
 
 .inbox .list-group-item {
   border: 0;
+  padding: 0;
 }
 
-.exam_section {
+.exam {
   background: #fff;
   border-radius: 8px;
   -webkit-box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
@@ -11681,23 +11695,38 @@ header .navbar-nav .avatar img {
   padding: 24px;
 }
 
-.exam_section div,
-.exam_section span {
-  font-size: 16px;
+.exam_title, .exam_class {
   color: #222222;
 }
 
-.exam_section div {
+.exam_title {
   line-height: 21px;
 }
 
-.exam_section span {
+.exam_title_primary {
+  color: #fff;
+}
+
+.exam_class, .exam_day, .exam_date, .exam_hour {
   font-size: 16px;
   line-height: 19px;
   opacity: 0.6;
 }
 
-.exam_title {
+.exam_class_primary, .exam_day_primary, .exam_date_primary, .exam_hour_primary {
+  color: #fff !important;
+  opacity: 0.6;
+}
+
+.exam_linear {
+  background: -webkit-gradient(linear, left top, right top, from(#8e93ff), color-stop(102.04%, #6967ff));
+  background: linear-gradient(90deg, #8e93ff 0%, #6967ff 102.04%);
+  -webkit-box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+          box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+  box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
+}
+
+.exam_section_title {
   margin-top: 28px;
   margin-bottom: 16px;
   font-size: 18px;
@@ -11708,23 +11737,7 @@ header .navbar-nav .avatar img {
   margin-top: 16px;
 }
 
-.bg-primary {
-  background: -webkit-gradient(linear, left top, right top, from(#8e93ff), color-stop(102.04%, #6967ff));
-  background: linear-gradient(90deg, #8e93ff 0%, #6967ff 102.04%);
-  -webkit-box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
-          box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
-  box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
-}
-
-.bg-primary div, .bg-primary span {
-  color: #fff !important;
-}
-
-.bg-primary span {
-  opacity: 0.6;
-}
-
-.info-absent {
+.absent {
   -webkit-box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
           box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
   border-radius: 4px;
@@ -11734,14 +11747,18 @@ header .navbar-nav .avatar img {
   margin: 0;
 }
 
-.info-absent h6, .info-absent .h6 {
+.absent_border {
+  border-right: 1px solid #F5F6F9;
+}
+
+.absent_title {
   color: #222222;
   line-height: 16px;
   opacity: 0.7;
   font-size: 12px;
 }
 
-.info-absent p {
+.absent p {
   font-size: 28px;
   font-weight: 600;
   font-size: 28px;
@@ -11749,31 +11766,31 @@ header .navbar-nav .avatar img {
   font-family: "Open Sans", sans-serif;
 }
 
-.info-absent .green {
+.absent_green {
   color: #76e699;
 }
 
-.info-absent .pink {
+.absent_pink {
   color: #f2699f;
 }
 
-.info-absent .orange {
+.absent_orange {
   color: #f5a623;
 }
 
-.list-group-item {
+.chat {
   border: 0;
   padding: 0;
 }
 
-.list-group-item .student_inf {
+.chat_student_inf {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-left: 11px;
 }
 
-.list-group-item .student_inf .student_name {
+.chat_student_inf_name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -11781,14 +11798,14 @@ header .navbar-nav .avatar img {
   color: #222222;
 }
 
-.list-group-item .student_inf .student_status {
+.chat_student_inf_status {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   line-height: 16px;
   opacity: 0.7;
 }
 
-.list-group-item .student_available {
+.chat_student_available {
   font-size: 10px;
   line-height: 14px;
   text-align: right;
@@ -11797,21 +11814,14 @@ header .navbar-nav .avatar img {
   opacity: 0.5;
 }
 
-.list-group-item .chat_spacing {
+.chat_spacing {
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 24px;
 }
 
-.list-group-item .last {
+.chat .last {
   margin-bottom: 24px;
-}
-
-.chatbox_title {
-  font-size: 18px;
-  line-height: 24px;
-  color: #222222;
-  margin-bottom: 16px;
 }
 
 .chat_btn {
@@ -11829,8 +11839,15 @@ header .navbar-nav .avatar img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.rounded-full {
+.chat_rounded-full {
   border-radius: 50%;
+}
+
+.chatbox_title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #222222;
+  margin-bottom: 16px;
 }
 
 .task_title {
@@ -11839,18 +11856,18 @@ header .navbar-nav .avatar img {
   line-height: 24px;
 }
 
-.task_container {
+.task {
   -webkit-box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
           box-shadow: 0px 9px 28px rgba(0, 0, 0, 0.0296649);
   border-radius: 4px;
   padding-bottom: 31px;
 }
 
-.task_container .task_logo {
+.task_logo {
   font-size: 20px;
 }
 
-.task_container .task_logo .clr-orange {
+.task_logo_orange {
   background: #ffe9e2;
   color: #f14d19;
   padding: 8px 13px 7px 14px;
@@ -11859,7 +11876,7 @@ header .navbar-nav .avatar img {
   text-align: center;
 }
 
-.task_container .task_logo .clr-yellow {
+.task_logo_yellow {
   background: #fff6d4;
   color: #f4c100;
   padding: 8px 13px 7px 14px;
@@ -11868,7 +11885,7 @@ header .navbar-nav .avatar img {
   text-align: center;
 }
 
-.task_container .task_logo .clr-blue {
+.task_logo_blue {
   background: #e5e8ff;
   color: #1630f4;
   padding: 8px 13px 7px 14px;
@@ -11877,7 +11894,7 @@ header .navbar-nav .avatar img {
   text-align: center;
 }
 
-.task_container .task_group {
+.task_group {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -11885,16 +11902,16 @@ header .navbar-nav .avatar img {
   padding-left: 16px;
 }
 
-.task_container .task_group .task_info {
+.task_group_info {
   padding-left: 11px;
 }
 
-.task_container .task_group .task_info .task_name {
+.task_group_info_name {
   font-size: 16px;
   line-height: 21px;
 }
 
-.task_container .task_group .task_info .task_time {
+.task_group_info_time {
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   line-height: 16px;
