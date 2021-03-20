@@ -7,11 +7,17 @@
   &_title,
   &_class {
     color: $clr-black;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 11px;
+    }
   }
   &_title {
     line-height: 21px;
     &_primary {
       color: $clr-white;
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 11px;
+      }
     }
   }
   &_class,
@@ -24,6 +30,12 @@
     &_primary {
       color: $clr-white !important;
       opacity: 0.6;
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 11px;
+      }
+    }
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 11px;
     }
   }
   &_linear {

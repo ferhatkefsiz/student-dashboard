@@ -11367,7 +11367,6 @@ p {
   background-color: #fff  !important;
 }
 
-
 .navbar {
   height: 70px;
   background-color: #fff;
@@ -11699,12 +11698,24 @@ p {
   color: #222222;
 }
 
+@media (max-width: 900px) {
+  .exam_title, .exam_class {
+    font-size: 11px;
+  }
+}
+
 .exam_title {
   line-height: 21px;
 }
 
 .exam_title_primary {
   color: #fff;
+}
+
+@media (max-width: 900px) {
+  .exam_title_primary {
+    font-size: 11px;
+  }
 }
 
 .exam_class, .exam_day, .exam_date, .exam_hour {
@@ -11716,6 +11727,18 @@ p {
 .exam_class_primary, .exam_day_primary, .exam_date_primary, .exam_hour_primary {
   color: #fff !important;
   opacity: 0.6;
+}
+
+@media (max-width: 900px) {
+  .exam_class_primary, .exam_day_primary, .exam_date_primary, .exam_hour_primary {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 900px) {
+  .exam_class, .exam_day, .exam_date, .exam_hour {
+    font-size: 11px;
+  }
 }
 
 .exam_linear {
