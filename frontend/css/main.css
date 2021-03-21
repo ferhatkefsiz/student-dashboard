@@ -11334,9 +11334,9 @@ fieldset:disabled .btn {
 }
 
 @font-face {
-  font-family: "Futura LtCn BT";
-  src: url("../assets/fonts/FuturaBT-LightCondensed.woff2") format("woff2"), url("../assets/fonts/FuturaBT-LightCondensed.woff") format("woff");
-  font-weight: 300;
+  font-family: "Futura PT Demi";
+  src: url("../assets/fonts/FuturaPT-Demi.woff2") format("woff2"), url("../assets/fonts/FuturaPT-Demi.woff2") format("woff");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -11379,6 +11379,7 @@ p {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   color: #222222;
+  font-family: "Futura PT Demi";
 }
 
 .navbar-nav {
@@ -11527,6 +11528,7 @@ p {
   font-size: 18px;
   line-height: 24px;
   color: #222222;
+  font-family: "Futura PT Demi";
   margin-bottom: 16px;
 }
 
@@ -11611,6 +11613,7 @@ p {
   line-height: 24px;
   color: #222222;
   margin-bottom: 16px;
+  font-family: "Futura PT Demi";
 }
 
 .inbox_inf {
@@ -11754,6 +11757,7 @@ p {
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Futura PT Demi";
 }
 
 .box_space {
@@ -11871,12 +11875,14 @@ p {
   line-height: 24px;
   color: #222222;
   margin-bottom: 16px;
+  font-family: "Futura PT Demi";
 }
 
 .task_title {
   padding-top: 31px;
   font-size: 18px;
   line-height: 24px;
+  font-family: "Futura PT Demi";
 }
 
 .task {
